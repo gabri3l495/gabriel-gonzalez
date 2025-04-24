@@ -67,3 +67,27 @@
 # else:
 #     print(" el numero", n1 "es mayor")
 
+
+
+
+
+#deletrea el nombre 
+cantcar=0
+v=0
+cons=0
+e=0
+frase=input("ingrese la frase")
+for i in frase:
+    print(i)
+    cantcar+=1
+    # if i == "a" or "b" or ....
+    if i.lower() in "aeiouAEIOUáéíóúÁÉÍÓÚ":
+        v+=1
+    elif i ==" ":
+        e+=0
+    else:
+        cons+=1
+
+print(f"el total de caracteres es {cantcar}")
+print(f"el total de vocales es{v}")
+print(f"el total de consonantes es{cons}")
