@@ -63,52 +63,50 @@
 # que el carrito comience con 3 productos 
 # hay que hacer 3 listas, produtos, precios y carrito
 
-# total=0
-# productos=["pollo","cerdo","vaca"]
-# precios=[50000,100000,200000]
-# carrito=[]
-# while True:
-#     print('''
-# 1- ingresar un producto nuevo
-# 2- comprar algo
-# 3- crear boleta 
-# 4- salir 
-# ''')
-#     opc=int(input("ingrese una opcion -> "))
-#     match opc:
-#         case 1:
-#             nom=input("ingrese un producto -> ")
-#             productos.append(nom)
-#             apell=int(input("ingrese un precio ->"))
-#             precios.append(apell)          
-#         case 2:      
-#             while True:
-#                 for i in range(len(productos)):
-#                     print(i+1, ".-", productos[i], "$", precios[i]) 
-#                 pro=int(input("selecciones l que quiere comprar"))
-#                 carrito.append(pro-1)
-#                 break      
-#         case 3:
-#             print("bienvenido a tortura animal :3")
-#             for i in range(len(carrito)):
-#                 print(productos[i], "---$", precios[i])  
-#                 total=total+precios[i] 
-#             print(f"el total de articulos es {len(carrito)} ")                     
-#             print(f"su total neto es {total}")                     
-#             print(f"su total con IVA es {total*1.19}")                     
-#         case 4:
-#             print("saliendo :3")
-#             break
-#         case _:
-#             print("opcion invalida")
+total=0
+productos=["pollo","cerdo","vaca"]
+precios=[50000,100000,200000]
+carrito=[]
+while True:
+    print('''
+1- ingresar un producto nuevo
+2- comprar algo
+3- crear boleta 
+4- salir 
+''')
+    opc=int(input("ingrese una opcion -> "))
+    match opc:
+        case 1:
+            nom=input("ingrese un producto -> ")
+            productos.append(nom)
+            apell=int(input("ingrese un precio ->"))
+            precios.append(apell)          
+        case 2:      
+            while True:
+                for i in range(len(productos)):
+                    print(i+1, ".-", productos[i], "$", precios[i]) 
+                pro=int(input("selecciones l que quiere comprar"))
+                carrito.append(pro-1)
+                break      
+        case 3:
+            print("bienvenido a tortura animal :3")
+            for i in range(len(carrito)):
+                print(productos[i], "---$", precios[i])  
+                total=total+precios[i] 
+            print(f"el total de articulos es {len(carrito)} ")                     
+            print(f"su total neto es {total}")                     
+            print(f"su total con IVA es {total*1.19}")                     
+        case 4:
+            print("saliendo :3")
+            break
+        case _:
+            print("opcion invalida")
 
-#     TAREA :o
-# crear programa de manejo de notas
-# 1 ingresar Nota 
-# 2 borrar nota 
-# 3 mostrar nota 
-# 4 sacar promedio, nota mayor y menor
-# 5 limpiar todas las notas 
-# 6 salir
+# NUEVO
+# numeros.insert(3,1000)
+# numeros.remove(66)
+# numeros.sort()
+# numeros.append()
+
 
 
